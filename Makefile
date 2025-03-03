@@ -4,7 +4,10 @@
 LIB_NAME=Sambilight
 
 #CC=arm-linux-gnueabi-gcc
-CC=~/VDLinux-arm-v7a9v3r1/bin/arm-v7a9v3r1-linux-gnueabi-gcc
+#CC=~/VDLinux-arm-v7a9v3r1/bin/arm-v7a9v3r1-linux-gnueabi-gcc
+#CC = /opt/VDLinux-arm-v7a9v3r1/bin/arm-v7a9v3r1-linux-gnueabi-gcc
+CC = /opt/VDLinux-arm-v7a9v3r1/bin/arm-v7a9v3r1-linux-gnueabi-gcc
+#CC = arm-linux-gnueabi-gcc
 
 OUTDIR?=${PWD}/out-${ARCH}
 

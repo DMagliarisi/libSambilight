@@ -29,8 +29,9 @@ typedef struct {
 	int y1;
 	int y2;
 } led_manager_led_t;
-
+unsigned short led_manager_get_leds_count(void);
 int led_manager_argb8888_to_leds(const unsigned char *buffer, unsigned char *data);
+
 int led_manager_init(const led_manager_config_t * config, const led_manager_profile_t * profile);
 int led_manager_set_profile(const led_manager_profile_t* profile);
 int led_manager_get_profile(led_manager_profile_t * profile);

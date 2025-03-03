@@ -63,6 +63,10 @@ typedef struct {
 
 static led_manager_t led_manager;
 
+unsigned short led_manager_get_leds_count() {
+    return (led_manager.config.h_leds_count * 2) + (led_manager.config.v_leds_count * 2);
+}
+
 unsigned char led_manager_correction(unsigned char color, short brightness_correction)
 {
 	if (brightness_correction) {
